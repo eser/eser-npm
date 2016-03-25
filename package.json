@@ -1,0 +1,13 @@
+{
+  "name": "eser",
+  "version": "0.0.2",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eser Ozvataf <eser@ozvataf.com>",
+  "license": "Apache-2.0",
+  "files": [
+    ".eslintrc.json"
+  ]
+}
