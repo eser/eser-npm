@@ -1,12 +1,28 @@
 {
   "name": "eser",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Eser Ozvataf <eser@ozvataf.com>",
+  "author": "Eser Ozvataf",
+  "homepage": "https://eserozvataf.github.io/eser",
+  "bugs": {
+    "url": "https://github.com/eserozvataf/eser/issues",
+    "email": "eser@ozvataf.com"
+  },
   "license": "Apache-2.0",
+  "contributors": [
+    {
+      "name": "Eser Ozvataf",
+      "email": "eser@ozvataf.com",
+      "url": "http://eser.ozvataf.com/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eserozvataf/eser.git"
+  },
   "files": [
     ".eslintrc.json"
   ]
