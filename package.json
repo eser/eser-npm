@@ -1,7 +1,12 @@
 {
   "name": "eser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
+  "keywords": [
+    "eser",
+    "ozvataf",
+    "eslintconfig"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,11 +24,13 @@
       "url": "http://eser.ozvataf.com/"
     }
   ],
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/eserozvataf/eser.git"
   },
   "files": [
+    "index.js",
     ".eslintrc.json",
     ".csscomb.json"
   ]

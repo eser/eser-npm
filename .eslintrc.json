@@ -1,5 +1,4 @@
 {
-    "parser": "babel-eslint",
     "rules": {
         "no-console": 0,
         "complexity": [
@@ -290,11 +289,6 @@
         "prefer-rest-params": 2,
         "prefer-spread": 2,
         "prefer-template": 1
-    },
-    "env": {
-        "es6": true,
-        "node": true,
-        "browser": false
     },
     "extends": "eslint:recommended"
 }
