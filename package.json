@@ -1,6 +1,6 @@
 {
   "name": "eser",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,6 +24,7 @@
     "url": "https://github.com/eserozvataf/eser.git"
   },
   "files": [
-    ".eslintrc.json"
+    ".eslintrc.json",
+    ".csscomb.json"
   ]
 }

@@ -16,10 +16,11 @@ To Install:
 To validate with ESLint:   
 `eslint --config ./node_modules/eser/.eslintrc.json ./src/`
 
+To validate with CSScomb:   
+`csscomb --config ./node_modules/eser/.csscomb.json ./src/`
+
 
 ### Todo List
-
-- ESLint Rules
 
 See [GitHub Issues](https://github.com/eserozvataf/eser/issues).
 
@@ -28,6 +29,7 @@ See [GitHub Issues](https://github.com/eserozvataf/eser/issues).
 
 * node.js (https://nodejs.org/)
 * ESLint (http://eslint.org)
+* CSScomb (http://csscomb.com)
 
 
 ## License
