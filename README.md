@@ -17,7 +17,7 @@ To validate with ESLint:
 `eslint --config ./node_modules/eser/.eslintrc.json ./src/`
 
 To validate with CSScomb:   
-`csscomb --config ./node_modules/eser/.csscomb.json ./src/`
+`csscomb --lint --config ./node_modules/eser/.csscomb.json ./src/`
 
 
 ### Todo List
