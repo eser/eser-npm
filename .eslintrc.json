@@ -160,7 +160,7 @@
         ],
         "eol-last": 2,
         "indent": [
-            2,
+            1,
             4
         ],
         "key-spacing": [
@@ -265,7 +265,7 @@
         ],
         "arrow-body-style": [
             2,
-            "always"
+            "as-needed"
         ],
         "arrow-parens": [
             2,
