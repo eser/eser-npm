@@ -188,6 +188,7 @@
             "always"
         ],
         "newline-before-return": 1,
+        "newline-per-chained-call": 1,
         "no-mixed-spaces-and-tabs": 1,
         "no-new-object": 2,
         "no-plusplus": 1,
