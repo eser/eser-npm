@@ -1,52 +1,29 @@
 {
   "name": "eser",
-  "description": "JavaScript Coding Convention",
-  "keywords": [
-    "eser",
-    "ozvataf",
-    "eslintconfig"
-  ],
-  "version": "0.1.5",
-  "homepage": "",
-  "author": "Eser Ozvataf <eser@ozvataf.com>",
-  "contributors": [
-    {
-      "name": "Eser Ozvataf",
-      "email": "eser@ozvataf.com",
-      "url": "http://eser.ozvataf.com/"
-    }
-  ],
+  "version": "2.0.0",
+  "description": "A mostly reasonable approach to JavaScript.",
+  "scripts": {
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eserozvataf/eser.git"
+    "url": "https://github.com/eserozvataf/eser.git"
   },
-  "bugs": {
-    "url": "https://github.com/eserozvataf/eser/issues",
-    "email": "eser@ozvataf.com"
-  },
-  "license": "Apache-2.0",
-  "preferGlobal": true,
-  "main": "./lib/index.js",
-  "engines": {
-    "node": ">=4.2.0"
-  },
-  "scripts": {},
-  "directories": {
-    "lib": "./lib"
-  },
-  "files": [
-    "lib",
-    "bin",
-    ".eslintrc.json",
-    ".csscomb.json"
+  "keywords": [
+    "style guide",
+    "lint",
+    "airbnb",
+    "es6",
+    "es2015",
+    "react",
+    "jsx"
   ],
-  "bin": {
-    "eser": "./bin/eser"
+  "author": "Eser Ozvataf <eser@ozvataf.com> (https://twitter.com/eserozvataf)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eserozvataf/eser/issues"
   },
-  "dependencies": {
-    "eslint": "^3.8.1",
-    "standard-engine": "^5.1.1",
-    "update-notifier": "^1.0.2"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/eserozvataf/eser",
+  "devDependencies": {
+    "markdownlint-cli": "^0.3.1"
+  }
 }
