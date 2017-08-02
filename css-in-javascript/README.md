@@ -1,4 +1,4 @@
-# [Eser: Airbnb CSS-in-JavaScript Style Guide](https://github.com/eserozvataf/eser)
+# [Eser: CSS-in-JavaScript Style Guide](https://github.com/eserozvataf/eser)
 
 *A mostly reasonable approach to CSS-in-JavaScript
 

@@ -1,0 +1,48 @@
+{
+  "name": "eslint-config-eser",
+  "version": "2.0.0",
+  "description": "Eser's ESLint config, following our styleguide",
+  "main": "index.js",
+  "scripts": {
+    "prelint": "editorconfig-tools check * rules/* test/*",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eserozvataf/eser"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "eser",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Eser Ozvataf <eser@ozvataf.com> (https://twitter.com/eserozvataf)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eserozvataf/eser/issues"
+  },
+  "homepage": "https://github.com/eserozvataf/eser",
+  "dependencies": {
+    "eslint-config-airbnb": "^15.1.0"
+  },
+  "devDependencies": {
+    "editorconfig-tools": "^0.1.1",
+    "eslint": "^3.19.0 || ^4.3.0",
+    "eslint-find-rules": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "^3.19.0 || ^4.3.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-react": "^7.1.0"
+  },
+  "engines": {
+    "node": ">= 4"
+  }
+}
