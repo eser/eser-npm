@@ -1,6 +1,6 @@
 {
   "name": "eser",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A mostly reasonable approach to JavaScript.",
   "scripts": {
   },
@@ -11,6 +11,7 @@
   "keywords": [
     "style guide",
     "lint",
+    "eser",
     "airbnb",
     "es6",
     "es2015",
