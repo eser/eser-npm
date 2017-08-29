@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-eser-react",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Eser's ESLint config for React, following our styleguide",
   "main": "index.js",
   "scripts": {
