@@ -1,4 +1,3 @@
-/* eslint-env node */
 const restrictedGlobals = require('eslint-restricted-globals');
 
 module.exports = {
@@ -8,7 +7,7 @@ module.exports = {
 
     parserOptions: {
         ecmaVersion: 2017,
-        sourceType: 'module',
+        // sourceType: 'module',
         ecmaFeatures: {
             generators: true,
             experimentalObjectRestSpread: true,
@@ -79,7 +78,7 @@ module.exports = {
         'import/no-deprecated': 'off',
         'import/no-duplicates': 'error',
         'import/no-dynamic-require': 'error',
-        'import/no-extraneous-dependencies': [ 'error', { devDependencies: [ 'test/**', 'tests/**', 'spec/**', '**/__tests__/**', 'test.{js,jsx}', 'test-*.{js,jsx}', '**/*.{test,spec}.{js,jsx}', '**/jest.config.js', '**/webpack.config.js', '**/webpack.config.*.js', '**/rollup.config.js', '**/rollup.config.*.js', '**/gulpfile.js', '**/gulpfile.*.js', '**/Gruntfile{,.js}', '**/protractor.conf.*.js' ], optionalDependencies: false } ],
+        'import/no-extraneous-dependencies': [ 'off', { devDependencies: [ 'test/**', 'tests/**', 'spec/**', '**/__tests__/**', 'test.{js,jsx}', 'test-*.{js,jsx}', '**/*.{test,spec}.{js,jsx}', '**/jest.config.js', '**/webpack.config.js', '**/webpack.config.*.js', '**/rollup.config.js', '**/rollup.config.*.js', '**/gulpfile.js', '**/gulpfile.*.js', '**/Gruntfile{,.js}', '**/protractor.conf.*.js' ], optionalDependencies: false } ],
         'import/no-internal-modules': [ 'off', { allow: [] } ],
         'import/no-mutable-exports': 'error',
         'import/no-named-as-default-member': 'error',
@@ -103,7 +102,7 @@ module.exports = {
         'lines-around-comment': 'off',
         'lines-around-directive': [ 'error', { before: 'always', after: 'always' } ],
         'max-depth': [ 'warn', 4 ],
-        'max-len': [ 'warn', 100, 2, { ignoreUrls: true, ignoreComments: false, ignoreRegExpLiterals: true, ignoreStrings: true, ignoreTemplateLiterals: true } ],
+        'max-len': [ 'warn', 120, 2, { ignoreUrls: true, ignoreComments: false, ignoreRegExpLiterals: true, ignoreStrings: true, ignoreTemplateLiterals: true } ],
         'max-lines': [ 'off', { max: 300, skipBlankLines: true, skipComments: true } ],
         'max-nested-callbacks': 'off',
         'max-params': [ 'off', 3 ],
@@ -223,7 +222,7 @@ module.exports = {
         'no-this-before-super': 'error',
         'no-throw-literal': 'warn',
         'no-trailing-spaces': [ 'error', { skipBlankLines: false, ignoreComments: false } ],
-        'no-undef-init': 'error',
+        'no-undef-init': 'off',
         'no-undef': 'error',
         'no-undefined': 'off',
         'no-underscore-dangle': [ 'error', { allow: [], allowAfterThis: false, allowAfterSuper: false, enforceInMethodNames: false } ],
@@ -253,7 +252,7 @@ module.exports = {
         'object-curly-newline': [ 'off', { ObjectExpression: { minProperties: 3, multiline: true, consistent: true }, ObjectPattern: { minProperties: 3, multiline: true, consistent: true } } ],
         'object-curly-spacing': [ 'error', 'always' ],
         'object-property-newline': [ 'error', { allowMultiplePropertiesPerLine: true } ],
-        'object-shorthand': [ 'error', 'always', { ignoreConstructors: false, avoidQuotes: true } ],
+        'object-shorthand': [ 'error', 'consistent' ],
         'one-var-declaration-per-line': [ 'error', 'always' ],
         'one-var': [ 'error', 'never' ],
         'operator-assignment': [ 'error', 'always' ],
@@ -261,8 +260,8 @@ module.exports = {
         'padded-blocks': [ 'error', 'never' ],
         'padding-line-between-statements': 'off',
         'prefer-arrow-callback': [ 'error', { allowNamedFunctions: false, allowUnboundThis: true } ],
-        'prefer-const': [ 'error', { destructuring: 'any', ignoreReadBeforeAssign: true } ],
-        'prefer-destructuring': [ 'warn', { VariableDeclarator: { array: false, object: true }, AssignmentExpression: { array: true, object: true } }, { enforceForRenamedProperties: false } ],
+        'prefer-const': [ 'warn', { destructuring: 'any', ignoreReadBeforeAssign: true } ],
+        'prefer-destructuring': [ 'off', { VariableDeclarator: { array: false, object: true }, AssignmentExpression: { array: true, object: true } }, { enforceForRenamedProperties: false } ],
         'prefer-numeric-literals': 'error',
         'prefer-promise-reject-errors': [ 'error', { allowEmptyReject: true } ],
         'prefer-reflect': 'off',

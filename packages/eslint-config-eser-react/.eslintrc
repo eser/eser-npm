@@ -1,3 +1,9 @@
 {
-  "extends": "./index.js"
+  "extends": "./index.js",
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  }
 }
