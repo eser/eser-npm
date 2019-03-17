@@ -1,6 +1,6 @@
 {
   "name": "eser",
-  "version": "2.0.6",
+  "version": "2.1.0",
   "description": "A mostly reasonable approach to JavaScript.",
   "scripts": {
   },
@@ -15,16 +15,21 @@
     "airbnb",
     "es6",
     "es2015",
+    "es2016",
+    "es2017",
+    "es2018",
     "react",
-    "jsx"
+    "hooks",
+    "jsx",
+    "a11y"
   ],
-  "author": "Eser Ozvataf <eser@ozvataf.com> (https://twitter.com/eserozvataf)",
+  "author": "Eser Ozvataf <eser@ozvataf.com> (https://twitter.com/eser)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/eserozvataf/eser/issues"
   },
   "homepage": "https://github.com/eserozvataf/eser",
   "devDependencies": {
-    "markdownlint-cli": "^0.3.1"
+    "markdownlint-cli": "^0.14.0"
   }
 }
