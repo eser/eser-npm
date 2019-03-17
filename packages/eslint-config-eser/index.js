@@ -354,7 +354,7 @@ module.exports = {
         'one-var-declaration-per-line': [ 'error', 'always' ],
         'operator-assignment': [ 'error', 'always' ],
         'operator-linebreak': [ 'error', 'after' ],
-        'padded-blocks': [ 'error', { blocks: 'never', classes: 'never', switches: 'never', allowSingleLineBlocks: true } ],
+        'padded-blocks': [ 'error', 'never', { allowSingleLineBlocks: true } ],
         'padding-line-between-statements': 'off',
         'prefer-object-spread': 'warn',
         'quote-props': [ 'error', 'as-needed', { keywords: true, unnecessary: false, numbers: false } ],
