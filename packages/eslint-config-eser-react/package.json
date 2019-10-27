@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-eser-react",
-  "version": "2.1.7",
+  "version": "2.1.8",
   "description": "Eser's ESLint config for React, following our styleguide",
   "main": "index.js",
   "scripts": {
@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/eserozvataf/eser",
   "dependencies": {
-    "eslint-config-eser": "^2.1.7"
+    "eslint-config-eser": "^2.1.8"
   },
   "devDependencies": {
     "editorconfig-tools": "^0.1.1",

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-eser",
-  "version": "2.1.7",
+  "version": "2.1.8",
   "description": "Eser's ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
