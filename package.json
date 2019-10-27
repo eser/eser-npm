@@ -1,8 +1,13 @@
 {
   "name": "eser",
-  "version": "2.1.2",
+  "version": "2.1.7",
   "description": "A mostly reasonable approach to JavaScript.",
   "scripts": {
+    "cleanup": "rm -rf yarn.lock node_modules/",
+    "lint": "markdownlint --config linters/.markdownlint.json README.md */README.md",
+    "lint:fix": "markdownlint --config linters/.markdownlint.json --fix README.md */README.md",
+    "test": "",
+    "test:coverage": ""
   },
   "repository": {
     "type": "git",
@@ -30,6 +35,8 @@
   },
   "homepage": "https://github.com/eserozvataf/eser",
   "devDependencies": {
-    "markdownlint-cli": "^0.14.0"
-  }
+    "markdownlint-cli": "^0.19.0"
+  },
+  "private": true,
+  "workspaces": [ "packages/*" ]
 }

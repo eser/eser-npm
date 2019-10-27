@@ -1,11 +1,15 @@
 {
   "name": "eslint-config-eser-react",
-  "version": "2.1.2",
+  "version": "2.1.7",
   "description": "Eser's ESLint config for React, following our styleguide",
   "main": "index.js",
   "scripts": {
-    "prelint": "editorconfig-tools check *",
-    "lint": "eslint ."
+    "cleanup": "rm -rf yarn.lock node_modules/",
+    "prelint": "# editorconfig-tools check *",
+    "lint": "eslint ./",
+    "lint:fix": "eslint --fix ./",
+    "test": "",
+    "test:coverage": ""
   },
   "repository": {
     "type": "git",
@@ -31,25 +35,25 @@
   },
   "homepage": "https://github.com/eserozvataf/eser",
   "dependencies": {
-    "eslint-config-eser": "^2.1.1"
+    "eslint-config-eser": "^2.1.7"
   },
   "devDependencies": {
     "editorconfig-tools": "^0.1.1",
-    "eslint": "^5.15.2",
-    "eslint-find-rules": "^3.3.1",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4",
-    "eslint-plugin-react-hooks": "^1.5.1"
+    "eslint": "^6.6.0",
+    "eslint-find-rules": "^3.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.2.0"
   },
   "peerDependencies": {
-    "eslint": "^5.15.2",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-react": "^7.12.4",
-    "eslint-plugin-react-hooks": "^1.5.1"
+    "eslint": "^5.16.0 || ^6.6.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.2.0"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">= 6"
   }
 }
