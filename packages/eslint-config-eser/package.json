@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-eser",
-  "version": "2.1.8",
+  "version": "2.1.9",
   "description": "Eser's ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
@@ -35,13 +35,13 @@
   },
   "devDependencies": {
     "editorconfig-tools": "^0.1.1",
-    "eslint": "^6.6.0",
-    "eslint-find-rules": "^3.4.0",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint": "^7.4.0",
+    "eslint-find-rules": "^3.5.0",
+    "eslint-plugin-import": "^2.22.0"
   },
   "peerDependencies": {
-    "eslint": "^5.16.0 || ^6.6.0",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint": "^7.4.0",
+    "eslint-plugin-import": "^2.22.0"
   },
   "engines": {
     "node": ">= 6"
