@@ -5,7 +5,7 @@ This package consists of ESLint rule definitions for [eser](https://github.com/e
 To use this package, execute:
 
 ```sh
-npm install eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-config-eser-react --save-dev
+npm install eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-config-eser-react --save-dev
 ```
 
 Then create an `.eslintrc` file:

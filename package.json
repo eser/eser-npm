@@ -1,6 +1,6 @@
 {
   "name": "eser",
-  "version": "2.2.1",
+  "version": "2.2.3",
   "description": "A mostly reasonable approach to JavaScript.",
   "scripts": {
     "cleanup": "rm -rf package-lock.json node_modules/",
