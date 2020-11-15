@@ -1,7 +1,7 @@
-# gitignore
+# OS-specific files
+.DS_Store
 
-node_modules
-
-# Only apps should have lockfiles
+# NPM-specific files
+node_modules/
 yarn.lock
 package-lock.json

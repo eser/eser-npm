@@ -1,5 +1,6 @@
 module.exports = {
-    rules: {
-        strict: [ 'warn', 'global' ],
-    },
+  rules: {
+    // babel inserts `'use strict';` for us
+    strict: ["error", "never"],
+  },
 };

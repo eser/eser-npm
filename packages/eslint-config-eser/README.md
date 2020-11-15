@@ -12,7 +12,7 @@ Then create an `.eslintrc` file:
 
 ```json
 {
-    "extends": "eser"
+  "extends": "eser"
 }
 ```
 

@@ -1,10 +1,10 @@
 {
   "name": "eslint-config-eser",
-  "version": "2.1.9",
+  "version": "2.2.1",
   "description": "Eser's ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
-    "cleanup": "rm -rf yarn.lock node_modules/",
+    "cleanup": "rm -rf package-lock.json node_modules/",
     "prelint": "# editorconfig-tools check *",
     "lint": "eslint ./",
     "lint:fix": "eslint --fix ./",
@@ -31,17 +31,17 @@
   },
   "homepage": "https://github.com/eserozvataf/eser",
   "dependencies": {
-    "confusing-browser-globals": "^1.0.9"
+    "confusing-browser-globals": "^1.0.10"
   },
   "devDependencies": {
     "editorconfig-tools": "^0.1.1",
-    "eslint": "^7.4.0",
-    "eslint-find-rules": "^3.5.0",
-    "eslint-plugin-import": "^2.22.0"
+    "eslint": "^7.13.0",
+    "eslint-find-rules": "^3.6.1",
+    "eslint-plugin-import": "^2.22.1"
   },
   "peerDependencies": {
-    "eslint": "^7.4.0",
-    "eslint-plugin-import": "^2.22.0"
+    "eslint": "^7.13.0",
+    "eslint-plugin-import": "^2.22.1"
   },
   "engines": {
     "node": ">= 6"
