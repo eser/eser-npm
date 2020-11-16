@@ -13,18 +13,25 @@ module.exports = {
   settings: {
     "import/resolver": {
       node: {
-        extensions: [".mjs", ".js", ".json"],
+        extensions: [".js", ".mjs", ".ts", ".d.ts", ".json"],
       },
     },
     "import/extensions": [
       ".js",
       ".mjs",
       ".jsx",
+      ".ts",
+      ".tsx",
+      ".d.ts",
     ],
     "import/core-modules": [],
     "import/ignore": [
-      "node_modules",
+      // "node_modules",
       "\\.(scss|sass|css|less|svg|json)$",
+    ],
+    "import/external-module-folders": [
+      "node_modules",
+      "node_modules/@types",
     ],
   },
 
@@ -74,9 +81,9 @@ module.exports = {
         "spec/**", // mocha, rspec-like pattern
         "**/__tests__/**", // jest pattern
         "**/__mocks__/**", // jest pattern
-        "test.{js,jsx}", // repos with a single test file
-        "test-*.{js,jsx}", // repos with multiple top-level test files
-        "**/*{.,_}{test,spec}.{js,jsx}", // tests where the extension or filename suffix denotes that it is a test
+        "test.{js,jsx,ts,tsx}", // repos with a single test file
+        "test-*.{js,jsx,ts,tsx}", // repos with multiple top-level test files
+        "**/*{.,_}{test,spec}.{js,jsx,ts,tsx}", // tests where the extension or filename suffix denotes that it is a test
         "**/jest.config.js", // jest config
         "**/jest.setup.js", // jest setup
         "**/vue.config.js", // vue-cli config
@@ -152,7 +159,7 @@ module.exports = {
 
     // Require modules with a single export to use a default export
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
-    "import/prefer-default-export": "error",
+    "import/prefer-default-export": "off",
 
     // Restrict which files can be imported in a given folder
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-restricted-paths.md
@@ -250,10 +257,6 @@ module.exports = {
 
     // Reports modules without any exports, or with unused exports
     // https://github.com/benmosher/eslint-plugin-import/blob/f63dd261809de6883b13b6b5b960e6d7f42a7813/docs/rules/no-unused-modules.md
-    "import/no-unused-modules": ["error", {
-      // ignoreExports: [],
-      missingExports: true,
-      unusedExports: true,
-    }],
+    "import/no-unused-modules": "off",
   },
 };

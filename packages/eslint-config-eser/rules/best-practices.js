@@ -3,7 +3,7 @@ module.exports = {
     // enforces getter/setter pairs in objects
     "accessor-pairs": [
       "error",
-      { "getWithoutSet": true, "setWithoutGet": false },
+      { getWithoutSet: true, setWithoutGet: false },
     ],
 
     // enforces return statements in callbacks of array's methods
@@ -39,7 +39,8 @@ module.exports = {
     "default-param-last": "error",
 
     // encourages use of dot notation whenever possible
-    "dot-notation": ["error", { allowKeywords: true }],
+    "dot-notation": "off",
+    "@typescript-eslint/dot-notation": ["error", { allowKeywords: true }],
 
     // enforces consistent newlines before or after dots
     // https://eslint.org/docs/rules/dot-location
@@ -84,7 +85,8 @@ module.exports = {
 
     // disallow empty functions, except for standalone funcs/arrows
     // https://eslint.org/docs/rules/no-empty-function
-    "no-empty-function": ["error", {
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": ["error", {
       allow: [
         "arrowFunctions",
         "functions",
@@ -140,7 +142,8 @@ module.exports = {
     "no-implicit-globals": "off",
 
     // disallow use of eval()-like methods
-    "no-implied-eval": "error",
+    "no-implied-eval": "off",
+    "@typescript-eslint/no-implied-eval": "error",
 
     // disallow this keywords outside of classes or class-like objects
     "no-invalid-this": "off",
@@ -155,11 +158,13 @@ module.exports = {
     "no-lone-blocks": "error",
 
     // disallow creation of functions within loops
-    "no-loop-func": "error",
+    "no-loop-func": "off",
+    "@typescript-eslint/no-loop-func": "error",
 
     // disallow magic numbers
     // https://eslint.org/docs/rules/no-magic-numbers
-    "no-magic-numbers": ["off", {
+    "no-magic-numbers": "off",
+    "@typescript-eslint/no-magic-numbers": ["off", {
       ignore: [],
       ignoreArrayIndexes: true,
       enforceConst: true,
@@ -214,7 +219,8 @@ module.exports = {
     "no-proto": "error",
 
     // disallow declaring the same variable more then once
-    "no-redeclare": "error",
+    "no-redeclare": "off",
+    "@typescript-eslint/no-redeclare": "error",
 
     // disallow certain object properties
     // https://eslint.org/docs/rules/no-restricted-properties
@@ -280,14 +286,16 @@ module.exports = {
     "no-sequences": "error",
 
     // restrict what can be thrown as an exception
-    "no-throw-literal": "error",
+    "no-throw-literal": "off",
+    "@typescript-eslint/no-throw-literal": "error",
 
     // disallow unmodified conditions of loops
     // https://eslint.org/docs/rules/no-unmodified-loop-condition
     "no-unmodified-loop-condition": "off",
 
     // disallow usage of expressions in statement position
-    "no-unused-expressions": ["error", {
+    "no-unused-expressions": "off",
+    "@typescript-eslint/no-unused-expressions": ["error", {
       allowShortCircuit: false,
       allowTernary: false,
       allowTaggedTemplates: false,

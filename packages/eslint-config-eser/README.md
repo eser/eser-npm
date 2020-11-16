@@ -5,7 +5,7 @@ This package consists of ESLint rule definitions for [eser](https://github.com/e
 To use this package, execute:
 
 ```sh
-npm install eslint eslint-plugin-import eslint-config-eser --save-dev
+npm install eslint eslint-plugin-import eslint-import-resolver-typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-eser --save-dev
 ```
 
 Then create an `.eslintrc` file:

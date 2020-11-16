@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-eser",
-  "version": "2.2.3",
+  "version": "2.2.6",
   "description": "Eser's ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
@@ -34,16 +34,24 @@
     "confusing-browser-globals": "^1.0.10"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.8.0",
+    "@typescript-eslint/parser": "^4.8.0",
     "editorconfig-tools": "^0.1.1",
     "eslint": "^7.13.0",
     "eslint-find-rules": "^3.6.1",
-    "eslint-plugin-import": "^2.22.1"
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "typescript": "^4.0.5"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.8.0",
+    "@typescript-eslint/parser": "^4.8.0",
     "eslint": "^7.13.0",
-    "eslint-plugin-import": "^2.22.1"
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "typescript": "^4.0.5"
   },
   "engines": {
-    "node": ">= 6"
+    "node": ">= 14"
   }
 }

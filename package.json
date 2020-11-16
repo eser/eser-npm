@@ -1,6 +1,6 @@
 {
   "name": "eser",
-  "version": "2.2.3",
+  "version": "2.2.6",
   "description": "A mostly reasonable approach to JavaScript.",
   "scripts": {
     "cleanup": "rm -rf package-lock.json node_modules/",
@@ -26,6 +26,7 @@
     "react",
     "hooks",
     "jsx",
+    "tsx",
     "a11y"
   ],
   "author": "Eser Ozvataf <eser@ozvataf.com> (https://twitter.com/eser)",

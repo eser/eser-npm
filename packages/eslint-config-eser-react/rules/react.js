@@ -1,4 +1,3 @@
-const assign = require("object.assign");
 const baseStyleRules = require("eslint-config-eser/rules/style").rules;
 
 const dangleRules = baseStyleRules["no-underscore-dangle"];
@@ -19,11 +18,12 @@ module.exports = {
   rules: {
     "no-underscore-dangle": [
       dangleRules[0],
-      assign({}, dangleRules[1], {
+      {
+        ...dangleRules[1],
         allow: dangleRules[1].allow.concat(
           ["__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"],
         ),
-      }),
+      },
     ],
 
     // Specify whether double or single quotes should be used in JSX attributes
@@ -329,7 +329,7 @@ module.exports = {
 
     // only .jsx files may have JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
-    "react/jsx-filename-extension": ["error", { extensions: [".jsx"] }],
+    "react/jsx-filename-extension": ["error", { extensions: [".jsx", ".tsx"] }],
 
     // prevent accidental JS comments from being injected into JSX as text
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
@@ -552,14 +552,14 @@ module.exports = {
   settings: {
     "import/resolver": {
       node: {
-        extensions: [".js", ".jsx", ".json"],
+        extensions: [".js", ".mjs", ".jsx", ".ts", ".tsx", ".d.ts", ".json"],
       },
     },
-    react: {
+    "react": {
       pragma: "React",
       version: "detect",
     },
-    propWrapperFunctions: [
+    "propWrapperFunctions": [
       "forbidExtraProps", // https://www.npmjs.com/package/airbnb-prop-types
       "exact", // https://www.npmjs.com/package/prop-types-exact
       "Object.freeze", // https://tc39.github.io/ecma262/#sec-object.freeze

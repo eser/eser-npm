@@ -50,7 +50,8 @@ module.exports = {
 
     // disallow duplicate class members
     // https://eslint.org/docs/rules/no-dupe-class-members
-    "no-dupe-class-members": "error",
+    "no-dupe-class-members": "off",
+    "@typescript-eslint/no-dupe-class-members": "error",
 
     // disallow importing from the same path more than once
     // https://eslint.org/docs/rules/no-duplicate-imports
@@ -87,7 +88,8 @@ module.exports = {
 
     // disallow unnecessary constructor
     // https://eslint.org/docs/rules/no-useless-constructor
-    "no-useless-constructor": "error",
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-useless-constructor": "error",
 
     // disallow renaming import, export, and destructured assignments to the same name
     // https://eslint.org/docs/rules/no-useless-rename

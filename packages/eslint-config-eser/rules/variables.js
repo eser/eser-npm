@@ -31,7 +31,8 @@ module.exports = {
     ].concat(confusingBrowserGlobals),
 
     // disallow declaration of variables already declared in the outer scope
-    "no-shadow": "error",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
 
     // disallow shadowing of names such as arguments
     "no-shadow-restricted-names": "error",
@@ -48,13 +49,15 @@ module.exports = {
     "no-undefined": "off",
 
     // disallow declaration of variables that are not used in the code
-    "no-unused-vars": [
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
       "error",
       { vars: "all", args: "after-used", ignoreRestSiblings: true },
     ],
 
     // disallow use of variables before they are defined
-    "no-use-before-define": [
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": [
       "error",
       { functions: true, classes: true, variables: true },
     ],

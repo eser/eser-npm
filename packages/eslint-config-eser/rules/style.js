@@ -18,10 +18,40 @@ module.exports = {
     "block-spacing": ["error", "always"],
 
     // enforce one true brace style
-    "brace-style": ["error", "1tbs", { allowSingleLine: true }],
+    "brace-style": "off",
+    "@typescript-eslint/brace-style": [
+      "error",
+      "1tbs",
+      { allowSingleLine: true },
+    ],
 
     // require camel case names
-    camelcase: ["error", { properties: "never", ignoreDestructuring: false }],
+    "camelcase": "off", // was { properties: "never", ignoreDestructuring: false },
+    "@typescript-eslint/naming-convention": [
+      "error",
+      // Allow camelCase variables (23.2),
+      // PascalCase variables (23.8),
+      // and UPPER_CASE variables (23.10)
+      {
+        selector: "variable",
+        format: ["camelCase", "PascalCase", "UPPER_CASE"],
+      },
+      // Allow camelCase functions (23.2),
+      // and PascalCase functions (23.8)
+      {
+        selector: "function",
+        format: ["camelCase", "PascalCase"],
+      },
+      // Airbnb recommends PascalCase for classes (23.3),
+      // and although Airbnb does not make TypeScript
+      // recommendations, we are assuming this rule would
+      // similarly apply to anything "type like", including
+      // interfaces, type aliases, and enums
+      {
+        selector: "typeLike",
+        format: ["PascalCase"],
+      },
+    ],
 
     // enforce or disallow capitalization of the first letter of a comment
     // https://eslint.org/docs/rules/capitalized-comments
@@ -39,16 +69,25 @@ module.exports = {
     }],
 
     // require trailing commas in multiline object literals
-    "comma-dangle": ["error", {
+    "comma-dangle": "off",
+    "@typescript-eslint/comma-dangle": ["error", {
       arrays: "always-multiline",
       objects: "always-multiline",
       imports: "always-multiline",
       exports: "always-multiline",
       functions: "always-multiline",
+      // typescript
+      enums: "always-multiline",
+      generics: "always-multiline",
+      tuples: "always-multiline",
     }],
 
     // enforce spacing before and after comma
-    "comma-spacing": ["error", { before: false, after: true }],
+    "comma-spacing": "off",
+    "@typescript-eslint/comma-spacing": [
+      "error",
+      { before: false, after: true },
+    ],
 
     // enforce one true comma style
     "comma-style": ["error", "last", {
@@ -82,7 +121,8 @@ module.exports = {
 
     // enforce spacing between functions and their invocations
     // https://eslint.org/docs/rules/func-call-spacing
-    "func-call-spacing": ["error", "never"],
+    "func-call-spacing": "off",
+    "@typescript-eslint/func-call-spacing": ["error", "never"],
 
     // requires function names to match the name of the variable or property to which they are
     // assigned
@@ -127,7 +167,8 @@ module.exports = {
 
     // this option sets a specific tab width for your code
     // https://eslint.org/docs/rules/indent
-    indent: ["error", 2, {
+    "indent": "off",
+    "@typescript-eslint/indent": ["error", 2, {
       SwitchCase: 1,
       VariableDeclarator: 1,
       outerIIFEBody: 1,
@@ -177,7 +218,8 @@ module.exports = {
     "key-spacing": ["error", { beforeColon: false, afterColon: true }],
 
     // require a space before & after certain keywords
-    "keyword-spacing": ["error", {
+    "keyword-spacing": "off",
+    "@typescript-eslint/keyword-spacing": ["error", {
       before: true,
       after: true,
       overrides: {
@@ -202,7 +244,8 @@ module.exports = {
 
     // require or disallow an empty line between class members
     // https://eslint.org/docs/rules/lines-between-class-members
-    "lines-between-class-members": [
+    "lines-between-class-members": "off",
+    "@typescript-eslint/lines-between-class-members": [
       "error",
       "always",
       { exceptAfterSingleLine: false },
@@ -294,7 +337,8 @@ module.exports = {
     "newline-per-chained-call": ["error", { ignoreChainWithDepth: 4 }],
 
     // disallow use of the Array constructor
-    "no-array-constructor": "error",
+    "no-array-constructor": "off",
+    "@typescript-eslint/no-array-constructor": "error",
 
     // disallow use of bitwise operators
     // https://eslint.org/docs/rules/no-bitwise
@@ -485,19 +529,21 @@ module.exports = {
     // https://eslint.org/docs/rules/quote-props.html
     "quote-props": [
       "error",
-      "as-needed",
+      "consistent-as-needed",
       { keywords: false, unnecessary: true, numbers: false },
     ],
 
     // specify whether double or single quotes should be used
-    quotes: ["error", "double", { avoidEscape: true }],
+    "quotes": "off",
+    "@typescript-eslint/quotes": ["error", "double", { avoidEscape: true }],
 
     // do not require jsdoc
     // https://eslint.org/docs/rules/require-jsdoc
     "require-jsdoc": "off",
 
     // require or disallow use of semicolons instead of ASI
-    semi: ["error", "always"],
+    "semi": "off",
+    "@typescript-eslint/semi": ["error", "always"],
 
     // enforce spacing before and after semicolons
     "semi-spacing": ["error", { before: false, after: true }],
@@ -517,7 +563,8 @@ module.exports = {
 
     // require or disallow space before function opening parenthesis
     // https://eslint.org/docs/rules/space-before-function-paren
-    "space-before-function-paren": ["error", {
+    "space-before-function-paren": "off",
+    "@typescript-eslint/space-before-function-paren": ["error", {
       anonymous: "always",
       named: "never",
       asyncArrow: "always",
